@@ -4,7 +4,7 @@
       "src": "package.json",
       "use": "@vercel/next",
       "config": {
-        "installCommand": "pnpm install --no-frozen-lockfile"
+        "installCommand": "npm set registry https://registry.npmjs.org/ && pnpm install --no-frozen-lockfile"
       }
     }
   ]
