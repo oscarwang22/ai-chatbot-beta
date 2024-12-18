@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev --turbo",
-		"build": "npx tsx lib/db/migrate && next build",
+		"build": "npm install tailwindcss postcss autoprefixer && npx tsx lib/db/migrate && next build",
 		"start": "next start",
 		"lint": "next lint && biome lint --write --unsafe",
 		"lint:fix": "next lint --fix && biome lint --write --unsafe",
@@ -15,8 +15,7 @@
 		"db:push": "drizzle-kit push",
 		"db:pull": "drizzle-kit pull",
 		"db:check": "drizzle-kit check",
-		"db:up": "drizzle-kit up",
-		"prepare": "npm install tailwindcss postcss autoprefixer"
+		"db:up": "drizzle-kit up"
 	},
 	"dependencies": {
 		"@ai-sdk/google": "1.0.11",
