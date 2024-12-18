@@ -9,17 +9,31 @@ export interface Model {
 
 export const models: Array<Model> = [
   {
-    id: 'gpt-4o-mini',
-    label: 'GPT 4o mini',
-    apiIdentifier: 'gpt-4o-mini',
-    description: 'Small model for fast, lightweight tasks',
+    id: 'gemini-1206',
+    label: 'Gemini Pro Preview',
+    apiIdentifier: 'gemini-exp-1206',
+    description: 'Most Capable Model Powering Gemini Advanced',
   },
   {
-    id: 'gpt-4o',
-    label: 'GPT 4o',
-    apiIdentifier: 'gpt-4o',
-    description: 'For complex, multi-step tasks',
+    id: 'gemini-2.0-flash',
+    label: 'Gemini 2.0 Flash Preview',
+    apiIdentifier: 'gemini-2.0-flash-exp',
+    description: 'Fast and Advanced model in Preview.',
+  },
+
+  {
+    id: 'gemini-1.5-pro',
+    label: 'Gemini 1.5 Pro Stable',
+    apiIdentifier: 'gemini-1.5-pro',
+    description: 'Advanced Stable Release of Gemini',
+  },
+
+  {
+    id: 'gemini-1.5-flash',
+    label: 'Gemini 1.5 Flash Stable',
+    apiIdentifier: 'gemini-1.5-flash',
+    description: 'Fast Stable Release of Gemini',
   },
 ] as const;
 
-export const DEFAULT_MODEL_NAME: string = 'gpt-4o-mini';
+export const DEFAULT_MODEL_NAME: string = 'gemini-1.5-flash';
