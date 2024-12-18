@@ -4,8 +4,12 @@
       "src": "package.json",
       "use": "@vercel/next",
       "config": {
-        "installCommand": "npm set registry https://registry.npmjs.org/ && pnpm install --no-frozen-lockfile"
+        "installCommand": "npm install",
+        "buildCommand": "npm run build"
       }
     }
-  ]
+  ],
+  "env": {
+    "NEXT_TELEMETRY_DISABLED": "1"
+  }
 }
