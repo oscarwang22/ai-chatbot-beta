@@ -2,7 +2,7 @@
   "name": "ai-chatbot",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
+"scripts": {
   "dev": "next dev --turbo",
   "build": "npx tsx lib/db/migrate && next build",
   "start": "next start",
@@ -17,7 +17,7 @@
   "db:check": "drizzle-kit check",
   "db:up": "drizzle-kit up",
   "prepare": "npm install tailwindcss postcss autoprefixer"
-},
+}
   "dependencies": {
     "@ai-sdk/google": "1.0.11",
     "@codemirror/lang-javascript": "^6.2.2",
